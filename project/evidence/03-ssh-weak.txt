@@ -1,0 +1,15 @@
+Hydra v9.7 (c) 2023 by van Hauser/THC & David Maciejak
+
+Hydra starting at 2026-11-19 22:19:37
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 20 login tries (l:1/p:20), ~2 tries per task
+[DATA] attacking ssh://localhost:2222/
+[2222][ssh] host: localhost   login: weakuser   password: 123456
+1 of 1 target successfully completed, 1 valid password found
+Hydra finished at 2026-11-19 22:19:39
+
+=== stronguser control run (stopped early, no hit expected) ===
+Hydra starting at 2026-11-19 22:21:40
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 20 login tries (l:1/p:20), ~2 tries per task
+[DATA] attacking ssh://localhost:2222/
+1 of 1 target completed, 0 valid password found
+Hydra finished at 2026-11-19 22:21:47

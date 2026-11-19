@@ -1,0 +1,11 @@
+=== 1. checksum vs the original signed checksum (expect FAILED) ===
+install.sh: FAILED
+sha256sum: WARNING: 1 computed checksum did NOT match
+
+=== 2. attacker regenerates the checksum to hide the change ===
+22a6b3a76e1afd6b84e4a9aa8080ca834b9bb9c2d4105c9a76b96e8a157f9fa5  install.sh
+
+=== 3. signature check on the regenerated checksum (expect BAD signature) ===
+gpg: Signature made Thu 19 Nov 2026 10:24:53 PM CET
+gpg:                using RSA key 82504C328EBF1962C0F11E66906671D42FE121AA
+gpg: BAD signature from "LabOps Release labops-release@labops.example" [ultimate]
